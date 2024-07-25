@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cafetería Atemporal</title>
 </head>
 <body>
@@ -18,8 +19,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Menú</a>
                         <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#">Menú</a>
                         <a class="nav-link" href="#">Eventos</a>
                         <a class="nav-link" href="#">Contacto</a>
                     </div>
@@ -28,6 +29,91 @@
         </nav>
     </header>
     <main>
+
+        <div class="container-fluid" id="div-titulo">
+            <h2>Nosotros</h2>
+        </div>
+
+        <div>
+            <h2>Menú</h2>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Cappuccino</th>
+                        <th>Latte</th>
+                        <th>Mocca</th>
+                        <th>Espresso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Agregar imagenes de cafe-->
+                    <tr>
+                        <td><img src="./assets/img/cappuccino.jpeg" alt="Cappuccino" class="img-producto"></td>
+                        <td><img src="./assets/img/latte.jpeg" alt="Latte" class="img-producto"></td>
+                        <td><img src="./assets/img/mocca.jpeg" alt="Mocca" class="img-producto"></td>
+                        <td><img src="./assets/img/espresso.jpeg" alt="Espresso" class="img-producto"></td>
+                    </tr>
+                    <tr>
+                        <td>$3.500</td>
+                        <td>$3.200</td>
+                        <td>$3.800</td>
+                        <td>$2.500</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Cheesecake</th>
+                        <th>Tartaleta de Manzana</th>
+                        <th>Galletas de Avena</th>
+                        <th>Pie de Limón</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Agregar imagenes de dulces-->
+                    <tr>
+                        <td><img src="./assets/img/cheesecake.jpeg" alt="Cheesecake" class="img-producto"></td>
+                        <td><img src="./assets/img/tartaleta.jpeg" alt="Tartaleta" class="img-producto"></td>
+                        <td><img src="./assets/img/galletas.jpeg" alt="Galletas Avena" class="img-producto"></td>
+                        <td><img src="./assets/img/pieLimon.jpeg" alt="Pie de Limón" class="img-producto"></td>
+                    </tr>
+                    <tr>
+                        <td>$4.800</td>
+                        <td>$4.500</td>
+                        <td>$3.200</td>
+                        <td>$4.600</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+            
+        <div>
+            <h2>Eventos</h2>
+        </div>
+            
+        <div class="container-fluid">
+            <h2>Contacto</h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="txt-email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="txt-email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+        
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
 
     </main>
 
