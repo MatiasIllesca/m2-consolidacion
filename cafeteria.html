@@ -120,19 +120,31 @@
             <div>
                 <h2>Contacto</h2>
                 <div class="col-12 col-lg-4 offset-lg-4">
-                    <form>
+                    <form id="formulario-cafeteria">
                         <div class="mb-3">
-                            <label for="txt-email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="txt-email" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="nombre-cliente-cafeteria" class="form-label" id="lbl-nombre-cafeteria">Nombre</label>
+                            <input type="text" class="form-control" id="nombre-cliente-cafeteria" aria-describedby="msj-nombre-cafeteria">
+                            <div id="msj-nombre-cafeteria" class="form-text text-danger"></div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="email-cliente-cafeteria" class="form-label" id="lbl-email-cafeteria">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email-cliente-cafeteria" aria-describedby="msj-email-cafeteria">
+                            <div id="msj-email-cafeteria" class="form-text text-danger"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono-cliente-cafeteria" class="form-label" id="lbl-telefono-cafeteria">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono-cliente-cafeteria">
+                            <div id="msj-telefono-cafeteria" class="form-text text-danger"></div>
                         </div>
                 
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                    <div id="alerta-exito-envio-cafeteria" class="alert alert-success mt-3 d-none" role="alert">
+                        Sus datos se enviaron correctamente.
+                    </div>
+                    <div id="alerta-error-envio-cafeteria" class="alert alert-danger mt-3 d-none" role="alert">
+                        Por favor revise si rellenó los campos correctamente.
+                    </div>
                 </div>
 
 
@@ -150,5 +162,7 @@
 
 
     <script src="./assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jquery-3.7.1.slim.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

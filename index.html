@@ -60,11 +60,21 @@
                     </tr>
                     <tr>
                         <td>
-                            Este proyecto se realizó en conjunto con otros participantes del Bootcamp Fullstack JavaScript,
-                            fue una buena forma de intercambiar ideas con compañeros
+                            <p>
+                                Este proyecto se realizó en conjunto con otros participantes del Bootcamp Fullstack JavaScript,
+                                fue una buena forma de intercambiar ideas con compañeros.
+                            </p>
+                            <p>
+                                En este proyecto no se utiliza JavaScript, solamente HTML, CSS y Bootstrap.
+                            </p>
                         </td>
                         <td>
-                            Este proyecto fue realizado de manera individual, sobre un tema que me gusta
+                            <p>
+                                Este proyecto fue realizado de manera individual, sobre un tema que me gusta.
+                            </p>
+                            <p>
+                                En este proyecto sí se usa algo de JavaScript aplicado a formularios.
+                            </p>
                         </td>
                     </tr>
                     <tr>
@@ -87,32 +97,44 @@
         <section class="container py-5" id="contacto-index">
             <h2>Contáctame</h2>
             <div class="col-12 col-lg-4 offset-lg-4">
-                <form >
+                <form id="formulario-index">
                     <div class="mb-3">
-                        <label for="nombre-index" class="form-label">Nombre y Apellido</label>
-                        <input type="text" class="form-control" id="nombre-index">
+                        <label for="nombre-index" class="form-label" id="lbl-nombre-index">Nombre</label>
+                        <input type="text" class="form-control" id="nombre-index" aria-describedby="msj-nombre-index">
+                        <div id="msj-nombre-index" class="form-text text-danger"></div>
                     </div>
                     <div class="mb-3">
-                        <label for="email-index" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email-index" placeholder="name@example.com">
+                        <label for="email-index" class="form-label" id="lbl-email-index">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email-index" placeholder="name@example.com" aria-describedby="msj-email-index">
+                        <div id="msj-email-index" class="form-text text-danger"></div>
                     </div>
                     <div class="mb-3">
-                        <label for="tel-index" class="form-label">Número teléfono</label>
-                        <input type="tel" class="form-control" id="tel-index" placeholder="912345678">
+                        <label for="telefono-index" class="form-label" id="lbl-telefono-index">Número de teléfono</label>
+                        <input type="tel" class="form-control" id="telefono-index" placeholder="912345678" aria-describedby="msj-telefono-index">
+                        <div id="msj-telefono-index" class="form-text text-danger"></div>
                     </div>
                     <div class="mb-3">
-                        <label for="comentario-index" class="form-label">Comentario</label>
-                        <textarea class="form-control" id="comentario-index" rows="3"></textarea>
+                        <label for="comentario-index" class="form-label" id="lbl-comentario-index">Comentario</label>
+                        <textarea class="form-control" id="comentario-index" rows="3" aria-describedby="msj-comentario-index"></textarea>
+                        <div id="msj-comentario-index" class="form-text text-danger"></div>
                     </div>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>                    
                 </form>
+                <div id="alerta-exito-envio-index" class="alert alert-success mt-3 d-none" role="alert">
+                    Sus datos se enviaron correctamente.
+                </div>
+                <div id="alerta-error-envio-index" class="alert alert-danger mt-3 d-none" role="alert">
+                    Por favor revise si rellenó los campos correctamente.
+                </div>
             </div>
+            
         </section>
     </main>
 
     <script src="./assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jquery-3.7.1.slim.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
