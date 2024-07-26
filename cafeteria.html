@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Cafetería Atemporal</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: olive;"  data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cafetería Atemporal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#nosotros-cafeteria">Nosotros</a>
+                        <a class="nav-link" href="#menu-cafeteria">Menú</a>
+                        <a class="nav-link" href="#eventos-cafeteria">Eventos</a>
+                        <a class="nav-link" href="#contacto-cafeteria">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container py-5" id="nosotros-cafeteria">
+            <div class="col-12 col-lg-4 offset-lg-4">
+                <h2>Nosotros</h2>
+                <div>
+                    <img src="./assets/img/cafeteria/coffeeShop.jpeg" alt="Cafeteria" id="img-tienda">
+                </div>
+                <p>
+                    Bienvenidos a nuestra hermosa cafetería, donde podrás disfrutar de un buen café para reanimar tu día, 
+                    compartir con tus seres queridos, o simplemente pasar un momento de relajación.
+                </p>
+                <p>
+                    También realizamos algunos eventos sociales de vez en cuando, por ello te invitamos a estar atento a la sección
+                    de <a href="#eventos-cafeteria">Eventos</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="container py-5" id="menu-cafeteria">
+            <div>
+                <h2>Menú</h2>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="cell-cafeteria">Cappuccino</th>
+                            <th class="cell-cafeteria">Latte</th>
+                            <th class="cell-cafeteria">Mocca</th>
+                            <th class="cell-cafeteria">Espresso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Agregar imagenes de cafe (LISTO)-->
+                        <tr>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/cappuccino.jpeg" alt="Cappuccino" class="img-producto"></td>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/latte.jpeg" alt="Latte" class="img-producto"></td>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/mocca.jpeg" alt="Mocca" class="img-producto"></td>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/espresso.jpeg" alt="Espresso" class="img-producto"></td>
+                        </tr>
+                        <tr>
+                            <td class="cell-precio">                                
+                                <div>
+                                    <label for="precio-cafeteria" class="col-2 offset-2">$3.500</label>
+                                    <input type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
+                            <td class="cell-cafeteria">$3.200</td>
+                            <td class="cell-cafeteria">$3.800</td>
+                            <td class="cell-cafeteria">$2.500</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="cell-cafeteria">Cheesecake</th>
+                            <th class="cell-cafeteria">Tartaleta de Manzana</th>
+                            <th class="cell-cafeteria">Galletas de Avena</th>
+                            <th class="cell-cafeteria">Pie de Limón</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Agregar imagenes de dulces (LISTO)-->
+                        <tr>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/cheesecake.jpeg" alt="Cheesecake" class="img-producto"></td>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/tartaleta.jpeg" alt="Tartaleta" class="img-producto"></td>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/galletas.jpeg" alt="Galletas Avena" class="img-producto"></td>
+                            <td class="cell-cafeteria"><img src="./assets/img/cafeteria/pieLimon.jpeg" alt="Pie de Limón" class="img-producto"></td>
+                        </tr>
+                        <tr>
+                            <td class="cell-cafeteria">$4.800</td>
+                            <td class="cell-cafeteria">$4.500</td>
+                            <td class="cell-cafeteria">$3.200</td>
+                            <td class="cell-cafeteria">$4.600</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <section class="container py-5" id="eventos-cafeteria">
+            <div>
+                <h2>Eventos</h2>
+            </div>
+        </section>
+
+        <section class="container py-5" id="contacto-cafeteria">
+            <div>
+                <h2>Contacto</h2>
+                <div class="col-12 col-lg-4 offset-lg-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="txt-email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="txt-email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="container py-5" id="volver-index-cafe">
+            <label for="">Presiona en botón para volver a Portafolio</label>
+            <a href="./index.html">
+                <button class="btn btn-info">
+                    Volver
+                </button>
+            </a>
+        </section>
+    </main>
+
+
+    <script src="./assets/js/bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

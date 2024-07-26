@@ -1,7 +1,76 @@
-#div-titulo {
-    background-color: aqua;
+/* GENERAL */
+
+h2 {
+    text-align: center;
 }
+
+/* Pagina Index */
+
+.img-inicio {
+    width: 300px;
+    border: 3px solid orange;
+}
+
+.cell-index {
+    text-align: center;
+}
+
+#body-index {
+    background-color: rgba(39, 148, 6, 0.295);
+}
+
+/* Pagina Cafeteria */
 
 .img-producto {
     width: 200px;
+}
+
+#nosotros-cafeteria {
+    text-align: center;
+}
+
+#img-tienda {
+    width: 500px;
+}
+
+.cell-cafeteria {
+    text-align: center;
+}
+
+/* td label.lbl-precio {
+    text-align: center;
+}
+
+td input.precio {
+    align: right;
+}
+ */
+/* Pagina Outdoor */
+
+#nosotros-outdoor {
+    min-height: 80vh;
+}
+
+#servicios-outdoor {
+    min-height: 80vh;
+}
+
+#galeria-outdoor {
+    min-height: 80vh;
+}
+
+#contacto-outdoor {
+    min-height: 80vh;
+}
+
+.carousel-caption h5 {
+    color: black;
+}
+
+.carousel-caption p {
+    color: black;
+}
+
+.carousel-indicators button {
+    background-color: black !important;
 }

@@ -5,119 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Cafetería Atemporal</title>
+    <title>Portafolio</title>
 </head>
-<body>
+<body id="body-index">
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: olive;"  data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Cafetería Atemporal</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Portafolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Nosotros</a>
-                        <a class="nav-link" href="#">Menú</a>
-                        <a class="nav-link" href="#">Eventos</a>
-                        <a class="nav-link" href="#">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-mi-index">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos-index">Proyectos</a>
+                        </li>         
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto-index">Contacto</a>
+                        </li>               
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-
-        <div class="container-fluid" id="div-titulo">
-            <h2>Nosotros</h2>
-        </div>
-
-        <div>
-            <h2>Menú</h2>
-
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Cappuccino</th>
-                        <th>Latte</th>
-                        <th>Mocca</th>
-                        <th>Espresso</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--Agregar imagenes de cafe-->
-                    <tr>
-                        <td><img src="./assets/img/cappuccino.jpeg" alt="Cappuccino" class="img-producto"></td>
-                        <td><img src="./assets/img/latte.jpeg" alt="Latte" class="img-producto"></td>
-                        <td><img src="./assets/img/mocca.jpeg" alt="Mocca" class="img-producto"></td>
-                        <td><img src="./assets/img/espresso.jpeg" alt="Espresso" class="img-producto"></td>
-                    </tr>
-                    <tr>
-                        <td>$3.500</td>
-                        <td>$3.200</td>
-                        <td>$3.800</td>
-                        <td>$2.500</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Cheesecake</th>
-                        <th>Tartaleta de Manzana</th>
-                        <th>Galletas de Avena</th>
-                        <th>Pie de Limón</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--Agregar imagenes de dulces-->
-                    <tr>
-                        <td><img src="./assets/img/cheesecake.jpeg" alt="Cheesecake" class="img-producto"></td>
-                        <td><img src="./assets/img/tartaleta.jpeg" alt="Tartaleta" class="img-producto"></td>
-                        <td><img src="./assets/img/galletas.jpeg" alt="Galletas Avena" class="img-producto"></td>
-                        <td><img src="./assets/img/pieLimon.jpeg" alt="Pie de Limón" class="img-producto"></td>
-                    </tr>
-                    <tr>
-                        <td>$4.800</td>
-                        <td>$4.500</td>
-                        <td>$3.200</td>
-                        <td>$4.600</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-            
-        <div>
-            <h2>Eventos</h2>
-        </div>
-            
-        <div class="container-fluid">
-            <h2>Contacto</h2>
-
-            <form>
-                <div class="mb-3">
-                    <label for="txt-email" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="txt-email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
+        <section class="container py-5" id="sobre-mi-index">
+            <h2>Sobre mí</h2>
+            <div>
+                <p>
+                    ¡Hola!, mi nombre es Matías, actualmente estoy estudiando en un Bootcamp para desarrollarme como Fullstack JavaScript
+                </p>
+            </div>
+        </section>
         
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        <section class="container py-5" id="proyectos-index">
+            <h2>Proyectos</h2>
+            <div>
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="cell-index">
+                            <a href="./outdoor.html"><img src="./assets/img/inicio/outdoor.jpeg" alt="Proyecto-Outdoor" class="img-inicio"></a>
+                        </td>
+                        <td class="cell-index">
+                            <a href="./cafeteria.html"><img src="./assets/img/inicio/coffee.jpeg" alt="Proyecto-Cafeteria" class="img-inicio"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Este proyecto se realizó en conjunto con otros participantes del Bootcamp Fullstack JavaScript,
+                            fue una buena forma de intercambiar ideas con compañeros
+                        </td>
+                        <td>
+                            Este proyecto fue realizado de manera individual, sobre un tema que me gusta
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="./outdoor.html">
+                                <button class="btn btn-primary">Ir al proyecto</button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="./cafeteria.html">
+                                <button class="btn btn-primary">Ir al proyecto</button>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                           
+            </div>
+        </section>
 
-
-        </div>
-
+        <section class="container py-5" id="contacto-index">
+            <h2>Contáctame</h2>
+            <div class="col-12 col-lg-4 offset-lg-4">
+                <form >
+                    <div class="mb-3">
+                        <label for="nombre-index" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="nombre-index">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-index" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email-index" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel-index" class="form-label">Número teléfono</label>
+                        <input type="tel" class="form-control" id="tel-index" placeholder="912345678">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario-index" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="comentario-index" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>                    
+                </form>
+            </div>
+        </section>
     </main>
 
-
     <script src="./assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
