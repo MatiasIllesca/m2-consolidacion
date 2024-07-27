@@ -15,6 +15,16 @@ h2 {
     text-align: center;
 }
 
+#celda-proyecto-outdoor {
+    width: 50%;
+}
+
+.titulo-proyecto {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
 #body-index {
     background-color: rgba(39, 148, 6, 0.295);
 }
@@ -45,6 +55,8 @@ td input.precio {
     align: right;
 }
  */
+
+
 /* Pagina Outdoor */
 
 #nosotros-outdoor {
