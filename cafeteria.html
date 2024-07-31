@@ -70,19 +70,29 @@
                         <tr>
                             <td class="cell-precio">                                
                                 <div>
-                                    <label for="precio-cafeteria" class="col-2 offset-2">$3.500</label>
-                                    <input type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                    <label for="precio-cappucino" class="col-2 offset-2">$3.500</label>
+                                    <input id="precio-cappucino" type="number" class="col-2 offset-2" value="0" min="0" max="10">
                                 </div>                                
                             </td>
-                            <td class="cell-cafeteria">$3.200</td>
-                            <td class="cell-cafeteria">$3.800</td>
-                            <td class="cell-cafeteria">$2.500</td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-latte" class="col-2 offset-2">$3.200</label>
+                                    <input id="precio-latte" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-mocca" class="col-2 offset-2">$3.800</label>
+                                    <input id="precio-mocca" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-espresso" class="col-2 offset-2">$2.500</label>
+                                    <input id="precio-espresso" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
                         </tr>
-                        <!--Agregar fila que actualice subtotales mediante JS-->
-                        <tr>
-                            <td>Actualizacion de precio</td>
-                        </tr>
-
                     </tbody>
                 </table>
 
@@ -104,10 +114,30 @@
                             <td class="cell-cafeteria"><img src="./assets/img/cafeteria/pieLimon.jpeg" alt="Pie de Limón" class="img-producto"></td>
                         </tr>
                         <tr>
-                            <td class="cell-cafeteria">$4.800</td>
-                            <td class="cell-cafeteria">$4.500</td>
-                            <td class="cell-cafeteria">$3.200</td>
-                            <td class="cell-cafeteria">$4.600</td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-cheesecake" class="col-2 offset-2">$4.800</label>
+                                    <input id="precio-cheesecake" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-tartaleta" class="col-2 offset-2">$4.500</label>
+                                    <input id="precio-tartaleta" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-galletas" class="col-2 offset-2">$3.200</label>
+                                    <input id="precio-galletas" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                              
+                            </td>
+                            <td class="cell-precio">
+                                <div>
+                                    <label for="precio-pie" class="col-2 offset-2">$4.600</label>
+                                    <input id="precio-pie" type="number" class="col-2 offset-2" value="0" min="0" max="10">
+                                </div>                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -168,6 +198,6 @@
 
     <script src="./assets/js/bootstrap/bootstrap.bundle.js"></script>
     <script src="./assets/js/jquery-3.7.1.slim.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cafe.js"></script>
 </body>
 </html>

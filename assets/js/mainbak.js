@@ -1,25 +1,9 @@
-// Control sobre formularios
+// Control sobre formularios (respaldo)
 
 $(document).ready(function(){
-
-    function limpiarErroresIndex() {
-        $("#msj-nombre-index").html("")
-        $("#msj-email-index").html("")
-        $("#msj-telefono-index").html("")
-        $("#msj-comentario-index").html("")
-        $("#lbl-nombre-index").removeClass("text-danger")
-        $("#lbl-email-index").removeClass("text-danger")
-        $("#lbl-telefono-index").removeClass("text-danger")
-        $("#lbl-comentario-index").removeClass("text-danger")
-        $("#alerta-error-envio-index").addClass("d-none")
-        $("#alerta-exito-envio-index").addClass("d-none")
-    }
-
     // Formulario Página Inicial
     $("#formulario-index").submit(function(evento){
         evento.preventDefault();
-        limpiarErroresIndex();
-
         // Variables de Entrada
         var nombreIndex = $("#nombre-index").val();
         var emailIndex = $("#email-index").val();
@@ -55,10 +39,40 @@ $(document).ready(function(){
 
         if (camposRellenados == false) {
             $("#alerta-error-envio-index").removeClass("d-none")
-        } else {
-            $("#alerta-error-envio-index").addClass("d-none")
-            $("#alerta-exito-envio-index").removeClass("d-none")
         }
     });
 
+    // Formulario Pagina Cafeteria
+    $("#formulario-cafeteria").submit(function(evento){
+        evento.preventDefault();
+        // Variables de Entrada
+        var nombreClienteCafeteria = $("#nombre-cliente-cafeteria").val();
+        var emailClienteCafeteria = $("#email-cliente-cafeteria").val();
+        var telefonoClienteCafeteria = $("#telefono-cliente-cafeteria").val();
+
+        // Variable booleana para verificacion de llenado de campos
+        var camposRellenados = true
+
+        if (nombreClienteCafeteria == "") {
+            camposRellenados = false
+            $("#msj-nombre-cafeteria").html("Ingrese su nombre")
+            $("#lbl-nombre-cafeteria").addClass("text-danger")
+        }
+
+        if (emailClienteCafeteria == "") {
+            camposRellenados = false
+            $("#msj-email-cafeteria").html("Ingrese su correo electrónico")
+            $("#lbl-email-cafeteria").addClass("text-danger")
+        }
+
+        if (telefonoClienteCafeteria == "") {
+            camposRellenados = false
+            $("#msj-telefono-cafeteria").html("Ingrese su número de teléfono")
+            $("#lbl-telefono-cafeteria").addClass("text-danger")
+        }
+
+        if (camposRellenados == false) {
+            $("#alerta-error-envio-cafeteria").removeClass("d-none")
+        }
+    });
 });
